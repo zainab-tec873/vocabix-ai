@@ -20,9 +20,9 @@ export default function RegisterPage() {
   };
 
   return (
-    <div style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center",background:"var(--bg)",padding:"24px 16px",position:"relative",overflow:"hidden"}}>
+    <div style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center",background:"var(--bg)",padding:"24px 16px",minHeight:"100vh",width:"100%",position:"relative",overflow:"hidden"}}>
       <div style={{position:"absolute",width:450,height:450,borderRadius:"50%",background:"radial-gradient(circle,rgba(76,175,80,0.1) 0%,transparent 70%)",bottom:"-20%",left:"-10%",pointerEvents:"none",animation:"orbMove 8s ease-in-out infinite"}}/>
-      <div style={{background:"var(--card)",border:"1px solid var(--border2)",borderRadius:24,padding:"36px 30px",width:"100%",maxWidth:400,position:"relative",zIndex:1,boxShadow:"var(--shadow)"}}>
+      <div style={{background:"var(--card)",border:"1px solid var(--border2)",borderRadius:24,padding:"36px 28px",width:"100%",maxWidth:420,margin:"20px auto",position:"relative",zIndex:1,boxShadow:"var(--shadow)"}}>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:28}}>
           <div style={{display:"flex",alignItems:"center",gap:9,cursor:"pointer"}} onClick={()=>navigate("/welcome")}>
             <img src="/logo.png" alt="Vocabix AI" style={{width:28,height:28,objectFit:"contain",filter:"drop-shadow(0 0 6px rgba(0,188,212,0.5))"}}/>
